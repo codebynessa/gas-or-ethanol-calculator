@@ -1,0 +1,55 @@
+<!--
+ * @ Author: Vanessa
+ * @ Create Time: 2025-06-16 19:13:10
+ * @ Modified by: Vanessa
+ * @ Modified time: 2025-06-16 19:23:42
+ * @ Description:
+ -->
+
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Álcool ou Gasolina?</title>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+
+  <body>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <div class="card shadow-lg">             
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">É melhor utilizar Álcool ou Gasolina?</h2>
+
+              <form>
+
+                <div class="form-group">
+                  <label for="precoAlcool">Preço do Álcool (R$):</label>
+                  <input type="number" id="precoAlcool" placeholder="Ex: 3.89" class="form-control" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="precoGasolina">Preço da Gasolina (R$):</label>
+                  <input type="number" id="precoGasolina" placeholder="Ex: 5.79" class="form-control" step="0.01" required>
+                </div>
+
+                <div id="resultado" class="alert alert-light text-center mt-3">
+                  Preencha os valores e clique em Calcular.
+                </div>
+
+                <button type="button" class="btn btn-primary btn-block mt-4" onclick="calcularCombustivel()">Calcular</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>
